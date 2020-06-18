@@ -17,6 +17,7 @@ module.exports = {
     "vue/singleline-html-element-content-newline": "off",
     "vue/require-default-prop": "off",
     "vue/html-closing-bracket-spacing": "off",
+    "vue/html-self-closing": "off", // this conflicts with an airbnb rule
     "vue/max-attributes-per-line": [
       "error",
       {

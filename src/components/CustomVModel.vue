@@ -1,9 +1,6 @@
 <template>
   <div>
-    <p
-      :class="{ selectedStyle: selected, noselect: true }"
-      @click="toggleSelect"
-    >
+    <p :class="{ selectedStyle: selected, noselect: true }" @click="toggleSelect">
       {{ name }}
     </p>
   </div>
@@ -46,8 +43,7 @@ p {
   box-sizing: border-box;
   border-radius: 25px;
   border: 2px solid rgb(0, 192, 222);
-  transition: border 0.1s ease-in, background-color 0.3s ease-in-out,
-  color 0.3s ease-in-out;
+  transition: border 0.1s ease-in, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 p:hover {
   background-color: rgb(0, 192, 222);

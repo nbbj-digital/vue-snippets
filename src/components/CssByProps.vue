@@ -1,6 +1,5 @@
 <template>
-  <div class="center-flex" :style="layoutStyle">
-  </div>
+  <div class="center-flex" :style="layoutStyle" />
 </template>
 
 <script>

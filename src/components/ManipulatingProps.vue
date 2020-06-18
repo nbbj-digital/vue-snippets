@@ -3,7 +3,7 @@
     <label>
       Input
       <!--we set the v-model to the "two-way bound" dynamic property we've created-->
-      <input type="text" v-model="duration"/>
+      <input v-model="duration" type="text" />
     </label>
   </div>
 </template>
@@ -29,10 +29,9 @@ export default {
       set(val) {
         this.dataset.duration = +val;
       }
-    },
+    }
   }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

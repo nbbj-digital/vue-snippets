@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "Chip",
+  name: "CustomVModel",
   props: {
     name: String
   },
@@ -19,6 +19,8 @@ export default {
     selected: false
   }),
   watch: {
+    // The emitted event has to be named "input" in order for the parent component
+    // to be able to consume this data through the v-model API
     selected(val) {
       this.$emit("input", { id: this.name, status: val });
     }

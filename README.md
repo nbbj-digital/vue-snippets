@@ -1,12 +1,12 @@
 <img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png" alt="Vue.js" width="100"/>
 
-# Vue Starter Template
+# Vue Snippets
 
-A Vue.js 3.0 full project starter template including best practices for code styling, testing, and building. Also incorporates the (soon to be released) [Composition API](https://vue-composition-api-rfc.netlify.com/).
+A collection of useful Vue.js snippets and patterns.
 
 ## Usage
 
-Fork, download, or clone this repository and use it as a starting point for your next Vue.js project.
+Fork, download, or clone this repository and run locally to interact with the examples and read the code in parallel.
 
 ## Added/Updated Configurations to Vue CLI Starter
 

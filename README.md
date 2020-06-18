@@ -34,6 +34,11 @@ is displaying the text input can do a computation using the input text.
 - Example: You're creating a component which has to display the most current data in the global store (Vuex), but your
 component also has to change that data and (both) re-render the correct data, and save it in the global store.
 
+3. [Deeply Nested Reactivity](/src/components/NestedReactivity.vue)
+- How to properly and reactively update properties and objects in arrays 
+- Example: You're fetching data with unknown or varying properties and need to update an existing object with that data,
+or you need to reassign an object in an array with updated data.
+
 ## Development
 
 ### Added/Updated Configurations to Vue CLI Starter

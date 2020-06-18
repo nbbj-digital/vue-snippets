@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" >
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld class="spacing" msg="Vue Snippets"/>
+    <h2>Custom V-Model</h2>
+    <custom-v-model name="Chip Selection" v-model="customVModelData"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "../components/HelloWorld.vue";
-
 export default {
   name: "Home",
+  data: () => ({
+    stuff: null,
+    customVModelData: null,
+  }),
   components: {
-    HelloWorld
+    HelloWorld: () => import("../components/HelloWorld.vue"),
+    CustomVModel: () => import("../components/CustomVModel.vue"),
   }
 };
 </script>
+<style scoped>
+.spacing{
+  padding-bottom: 30px;
+}
+</style>

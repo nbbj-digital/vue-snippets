@@ -1,7 +1,7 @@
 <template>
   <div>
     <p><b>Animal Type: </b>{{ animal.type }}</p>
-    <div id="numbers-container">
+    <div id="words-container">
       <p v-for="(word, i) in sentence" :key="`word-${word}-${i}`">{{ word }}</p>
     </div>
     <button @click="updateData">Reactively Update Data</button>
@@ -18,7 +18,7 @@ export default {
   // Vue cannot detect a reactive change using these two lines
   mounted() {
     // Vue cannot detect the change in object of an item in an array
-    this.numbers[0] = 1;
+    this.sentence[0] = 1;
     // Vue cannot detect addition of property not predefined when instantiated in data
     this.animal.type = "Dog";
   },
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style scoped>
-#numbers-container {
+#words-container {
   display: inline-flex;
   flex-direction: row;
 }

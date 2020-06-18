@@ -1,5 +1,5 @@
 <template>
-  <div class="center-flex" :style="layoutWidth">
+  <div class="center-flex" :style="layoutStyle">
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
     }
   },
   computed: {
-    layoutWidth() {
+    layoutStyle() {
       return {
         width: `${this.width}px`,
         height: `${this.height}px`,

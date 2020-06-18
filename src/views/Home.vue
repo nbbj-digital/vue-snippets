@@ -11,7 +11,7 @@
 
     <div class="spacing">
       <h2>CSS By Props</h2>
-      <css-by-props color="orange"/>
+      <css-by-props color="deepskyblue"/>
     </div>
 
   </div>
@@ -33,6 +33,6 @@ export default {
 </script>
 <style scoped>
 .spacing {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 </style>

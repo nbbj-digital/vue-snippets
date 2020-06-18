@@ -37,7 +37,7 @@ export default {
 p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: black;
+  color: rgb(0, 192, 222);
   background-color: white;
   display: inline-block;
   padding: 5px;
@@ -45,16 +45,23 @@ p {
   margin-right: 3px;
   box-sizing: border-box;
   border-radius: 25px;
-  border: 2px solid #2d2d2d;
+  border: 2px solid rgb(0, 192, 222);
   transition: border 0.1s ease-in, background-color 0.3s ease-in-out,
   color 0.3s ease-in-out;
 }
 p:hover {
-  background-color: black;
+  background-color: rgb(0, 192, 222);
   color: white;
 }
 .selectedStyle {
-  background-color: black;
+  background-color: rgb(0, 192, 222);
   color: white;
+}
+
+.noselect {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 </style>
